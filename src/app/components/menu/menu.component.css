@@ -1,0 +1,21 @@
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .primary-btn{
+    color: #FFF !important;
+    background-color: var(--primary-dark) !important;
+  }
+
+  .secondary-btn{
+    color: #FFF !important;
+    background-color: var(--secondary-light) !important;
+  }

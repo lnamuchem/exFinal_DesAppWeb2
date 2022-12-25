@@ -1,0 +1,25 @@
+.card {
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 1.5rem;
+    background-color: var(--primary-dark);
+    color: #FFF;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    /* margin: 2rem; */
+}
+
+.center{
+    align-self: center;
+}
+
+.strong-text{
+    font-weight: bold;
+}

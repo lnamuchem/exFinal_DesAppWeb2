@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root{
+  --primary: #7388FF;
+  --primary-light: #7388FF;
+  --primary-dark: #1A2669;
+  --secondary-light: #B5993F;
+  --secondary-dark: #695310;
+}
+
+.return-actions{
+  display: flex;
+  margin: 1rem auto 2.5rem;
+  justify-content: space-around;
+}

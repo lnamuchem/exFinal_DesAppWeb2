@@ -1,0 +1,33 @@
+<section class="container">
+  <div class="return-actions">
+    <button mat-button (click)="goBack()"><mat-icon>arrow_back</mat-icon>Regresar</button>
+    <button mat-button routerLink="/">Ir al inicio <mat-icon>home</mat-icon></button>
+  </div>
+  <div class="card">
+    <div class="title">
+      {{ bebida.strDrink }}
+    </div>
+    <div class="center">
+      <img [src]="bebida.strDrinkThumb" [alt]="bebida.strDrink" height="200px">
+    </div>
+    <div class="center">
+      <span class="strong-text">Tipo de vaso:</span> {{bebida.strGlass}}
+    </div>
+    <div class="ingredients">
+      <h3>Ingredientes</h3>
+      <table mat-table [dataSource]="ingredientes">
+        <ng-container matColumnDef="Nombre">
+          <th mat-header-cell *matHeaderCellDef>Nombre</th>
+          <td mat-cell *matCellDef="let ingrediente">{{ ingrediente.nombre }}</td>
+        </ng-container>
+        <ng-container matColumnDef="Cantidad">
+          <th mat-header-cell *matHeaderCellDef>Cantidad</th>
+          <td mat-cell *matCellDef="let ingrediente">{{ ingrediente.medida }}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="ingredientesCols"></tr>
+        <tr mat-row *matRowDef="let row; columns: ingredientesCols"></tr>
+      </table>
+    </div>
+  </div>
+</section>

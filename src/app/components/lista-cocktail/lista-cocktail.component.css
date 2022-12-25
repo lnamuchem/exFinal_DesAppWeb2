@@ -1,0 +1,33 @@
+
+.container{
+    text-align: center;
+    padding: 2rem;
+}
+
+h1{
+    color: var(--primary-dark);
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 2rem auto;
+    background-color: var(--secondary-light);
+    color: #FFF;
+}
+
+.list .listitem{
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.list .listitem:hover{
+    background-color: var(--primary-dark);
+    cursor: pointer;
+}
+
+.cocktail-name{
+    font-size: 1.2rem;
+}

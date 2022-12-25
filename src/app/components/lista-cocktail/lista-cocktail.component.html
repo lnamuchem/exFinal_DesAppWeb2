@@ -1,0 +1,15 @@
+<section class="container">
+  <div class="return-actions">
+    <button mat-button (click)="goBack()"><mat-icon>arrow_back</mat-icon>Regresar</button>
+    <button mat-button routerLink="/">Ir al inicio <mat-icon>home</mat-icon></button>
+  </div>
+  <h1>Lista de bebidas {{ isAlcohol ? 'con' : 'sin' }} Alcohol</h1>
+  <div class="list">
+    <div *ngFor="let bebida of bebidas" (click)="showInfo(bebida.idDrink)" class="listitem">
+      <div>
+      </div>
+      <img [src]="bebida.strDrinkThumb" [alt]="bebida.strDrink" height="40px">
+      <span class="cocktail-name">{{ bebida.strDrink }}</span>
+    </div>
+  </div>
+</section>
